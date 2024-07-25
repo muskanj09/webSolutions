@@ -1,0 +1,278 @@
+.homeback{
+    width: 100%;
+}
+.section-solution{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px 40px;
+    align-items: center;
+    text-align: center;
+}
+.solution-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.solution-text h2{
+    color: #5e759e;
+}
+.solution-img img{
+    width: 50%;
+    height: 50vh;
+    transition: transform 1s ease;
+}
+.solution-img img:hover{
+    transform: scaleX(1.2);
+}
+.section-cards{
+    text-align: center;
+    padding: 20px 40px;
+    background-color: rgb(216, 216, 216);
+}
+.section-cards h3{
+    font-weight: 400;
+    color: gray;
+}
+.card-flex{
+    padding-block: 40px;
+    display: flex;
+    gap: 50px;
+}
+.card{
+   background-color: white; 
+   padding: 20px 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   transition: transform 1s ease;
+   box-shadow: 7px 7px 7px;
+   border-radius: 14px;
+}
+.cardIcon{
+    font-size: 2em;
+}
+.card a{
+    text-decoration: none;
+    color: blue;
+}
+.card a:hover{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.section-funding{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+}
+.funding-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-block: 20px;
+    align-items: center;
+}
+.fundingText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fundingText a{
+    background-color: gray;
+    margin-inline: 50px;
+    padding-block: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 14px;
+    font-weight: bold;
+}
+.fundingText a:hover{
+    background-color: white;
+    color: gray;
+}
+.fundingContent{
+    font-size: 1.3em;
+    padding-inline: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section-project{
+    text-align: center;
+    padding: 20px 100px;
+}
+.section-project h3{
+    color: gray;
+}
+.backProject{
+    background-image: url('./project.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.backProject h1{
+    letter-spacing: 2px;
+    color: rgb(167, 167, 167);
+}
+.backProject p{
+    color: gray;
+}
+.projectList{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+    background-color: gray;
+}
+.projectList li{
+    list-style: none;
+}
+.projectList li a{
+    color: white;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.projectList li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 14px;
+}
+.projectContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.projectContent a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 44px;
+}
+.section-form{
+    background-color: #5e759e;
+    padding: 20px 80px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.formContent h2{
+    color: white;
+    font-size: 2em;
+}
+.formContent p{
+    color: rgb(3, 209, 168);
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 100px;
+    color: white;
+    gap: 10px;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type=text],
+input[type=email],
+input[type=number],
+button[type=submit]{
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: 1px solid black;
+    font-size: 1em;
+}
+button[type=submit]{
+    background-color: rgb(3, 209, 168);
+}
+.section-socialMedia{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 80px;
+}
+.section-footer{
+    background-color: black;
+    color: gray;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-around;
+}
+.footIcon{
+    font-size: 2em;
+    color: white;
+}
+.footerIcon{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .section-solution{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-flex{
+        flex-direction: column;
+    }
+    .funding-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fundingContent{
+        padding-inline: 20px;
+    }
+    .projectList{
+        flex-direction: column;
+    }
+    .section-project{
+        padding: 20px;
+    }
+    .projectContent{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section-form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        gap: 20px;
+    }
+    .form form{
+        padding-inline: 20px;
+    }
+    .section-socialMedia{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section-footer p:nth-child(2){
+        display: none;
+    }
+}
