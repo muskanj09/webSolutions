@@ -27,6 +27,7 @@
 @media screen and (max-width: 980px) {
     .navbar img{
         justify-content: center;
+        width: 90%;
     }
     .navlist{
         display: none;
