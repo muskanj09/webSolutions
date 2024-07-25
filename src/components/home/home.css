@@ -238,6 +238,9 @@ button[type=submit]{
         display: flex;
         flex-direction: column;
     }
+    .solution-img img{
+        height: 30vh;
+    }
     .card-flex{
         flex-direction: column;
     }
